@@ -5,16 +5,12 @@ namespace StarChart.Controllers
 {
     [Route("")]
     [ApiController]
-    public class CelestialObjectController : Controller
+    public class CelestialObjectController : ControllerBase
     {
         private readonly ApplicationDbContext _context;
         public CelestialObjectController(ApplicationDbContext context)
         {
             _context = context;
-        }
-        public IActionResult Index()
-        {
-            return View();
         }
     }
 }
